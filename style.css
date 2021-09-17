@@ -9,6 +9,11 @@ header img{
 	height:100px;
 }
 
+#style{
+	background-color:#ddd;
+	padding:10px;
+}
+
 #content{
 	max-width:960px;
 	margin-left: auto;
