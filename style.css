@@ -30,7 +30,7 @@ h1{
 	padding-top:50px;
 	font-size:64pt;
 	text-decoration:underline;
-	text-shadow:4px 3px 0px green, 9px 8px 0px rgba(0, 0, 0, 0, 15);
+	text-shadow:4px 3px 0px #0000ac, 9px 8px 0px #0000f0;
 }
 
 #content{
