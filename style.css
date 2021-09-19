@@ -20,13 +20,13 @@ header{
 
 div{
 	max-width:960px;
-	margin:0 auto;
+	margin:auto;
 }
 	
 
 h1{
 	padding-top:20px;
-	font-size: 56pt;
+	font-size: 64pt;
 }
 
 #content{
