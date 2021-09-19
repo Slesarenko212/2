@@ -30,18 +30,16 @@ h1{
 	padding-top:50px;
 	font-size:64pt;
 	text-decoration:underline;
-	color: hsl(300, 70%, 55%);
-	text-shadow:
-		0 0 2px #fff,
-		-1px -1px 0 hsl(300, 70%, 35%),
-		-2px -2px 1px hsl(300, 70%, 35%),
-		-2px -2px 2px hsl(300, 10%, 15%),
-		-3px -3px 0 7px hsl(60, 10%, 65%),
-		-4px -4px 0 7px hsl(60, 10%, 65%),
-		-5px -5px 0 7px hsl(60, 10%, 65%),
-		-6px -6px 0 7px hsl(60, 10%, 65%),
-		-7px -7px 4px 8px hsl(60, 10%, 40%),
-		-8px -8px 6px 9px hsl(60, 10%, 55%);
+	
+	
+	padding:30px 20px;
+font:bold 70px arial;
+text-align:center;
+background:#000;
+color:#FFFFFF;
+text-shadow:0 0 10px #fff, 0 0 20px #00d2ff, 0 0 30px #00d2ff, 0 0 40px #00d2ff, 0 0 50px #00d2ff, 0 0 60px #00d2ff, 0 0 70px #00d2ff;
+	
+	
 }
 
 #content{
