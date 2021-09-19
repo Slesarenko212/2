@@ -31,14 +31,10 @@ h1{
 	font-size:64pt;
 	text-decoration:underline;
 	
-	
-	padding:30px 20px;
-font:bold 70px arial;
-text-align:center;
+font:bold arial;
 background:#000;
 color:#FFFFFF;
-text-shadow:0 0 10px #fff, 0 0 20px #00d2ff, 0 0 30px #00d2ff, 0 0 40px #00d2ff, 0 0 50px #00d2ff, 0 0 60px #00d2ff, 0 0 70px #00d2ff;
-	
+text-shadow:0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
 	
 }
 
