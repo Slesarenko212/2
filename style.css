@@ -28,7 +28,7 @@ h1{
 	margin:0;
 	padding-top:50px;
 	font-size:64pt;
-	text-decoration:underline;
+	text-decoration:underline, blink;
 }
 
 #content{
