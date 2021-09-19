@@ -14,8 +14,7 @@ header img{
 header{
 	width:100%;
 	background-color:green;
-	height:198px;
-	padding:10px;
+	height:220px;
 }
 
 div{
@@ -28,9 +27,6 @@ h1{
 	padding-top:20px;
 	font-size: 56pt;
 }
-
-
-	
 
 #content{
 	max-width:960px;
