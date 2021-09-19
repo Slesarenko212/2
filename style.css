@@ -11,13 +11,14 @@ header img{
 	padding:10px;
 }
 
+header{
+	max-width:960px;
+	vertical-align:middle;
+}
+	
+
 h1{
 	padding-top:20px;
-}
-
-#style{
-	background-color:#ddd;
-	padding:10px;
 }
 
 div{
