@@ -1,6 +1,6 @@
 ﻿body{
 	color:#ff00ff;
-	background-color:yellow;
+	background-color:#ddd;
 	font-style: italic;
 }
 
@@ -12,9 +12,8 @@ header img{
 }
 
 header{
-	max-width:960px;
 	vertical-align:middle;
-	background-color:#b0b0b0;
+	background-color:green;
 }
 	
 
