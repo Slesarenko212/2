@@ -13,9 +13,11 @@ header img{
 
 header{
 	width:100%;
-	vertical-align:middle;
 	background-color:green;
-	margin:0 auto;
+}
+
+div{
+	vertical-align:middle;
 }
 	
 
