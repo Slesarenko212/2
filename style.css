@@ -68,6 +68,13 @@ td, th{
 	border:5px outset #ccc;
 }
 
+h2{
+	padding-top:50px;
+	padding-left:10px;
+	color:#fff;
+	font-size:15pt;
+}
+
 footer{
 	pozition:absolute;
   	margin-left:0;
@@ -75,11 +82,5 @@ footer{
   	width: 100%;
  	height: 100px;
 	background-color:#000fff;
-	padding:20px;
-}
-
-h2{
-	padding-top:50px;
-	padding-left:10px;
-	color:#fff;
+	margin-top:20px;
 }
