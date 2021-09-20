@@ -28,6 +28,8 @@ nav li{
 	max-width:960px;
 	height:50px;
 	padding:5px;
+	margin: 0;
+	padding-left: 0;
 }
 
 div{
