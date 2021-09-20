@@ -20,17 +20,32 @@ header{
 	height:220px;
 }
 
-nav li{
-	display:inline;
-	list-style:none;	
-	border:solid 1px #000000;
-	background-color:#fffff0;
-	max-width:960px;
-	height:50px;
-	padding:5px;
+#menu{
 	margin: 0;
-	padding-left: 0;
+  	padding: 0;
+  	list-style-type: none;
+	border: 2px solid #0066FF;
+  	border-radius: 20px 5px;
+  	width: 960px;
+  	text-align: center;
+  	background-color: #fffff0;
 }
+#menu li{
+	display:inline;
+}
+#menu a{
+	padding: 5px 10px;
+  	text-decoration: none;
+  	font-weight: bold;
+  	display: inline-block;
+  	width: 100px;
+}
+#menu a:hover {
+  	border-radius: 20px 5px;
+  	background-color: #0066FF;
+}
+
+
 
 div{
 	max-width:960px;
