@@ -20,6 +20,24 @@ header{
 	height:220px;
 }
 
+h1{
+	margin:0;
+	padding-top:50px;
+	font-size:64pt;
+	text-decoration:underline;
+	font:bold arial;
+	background:#000;
+	color:#ffffff;
+	text-shadow:
+		0 0 10px #fff, 
+		0 0 20px #ff00ff, 
+		0 0 30px #ff00ff, 
+		0 0 40px #ff00ff, 
+		0 0 50px #ff00ff, 
+		0 0 60px #ff00ff, 
+		0 0 70px #ff00ff;
+}
+
 #menu{
 	margin:0;
   	padding:0;
@@ -35,7 +53,6 @@ header{
 }
 #menu a{
 	padding:5px 10px;
-  	text-decoration:none;
   	font-weight:bold;
   	display:inline-block;
   	width:100px;
@@ -45,30 +62,9 @@ header{
   	background-color:#ff00ff;
 }
 
-
-
 div{
 	max-width:960px;
 	margin:0 auto;
-}
-	
-
-h1{
-	margin:0;
-	padding-top:50px;
-	font-size:64pt;
-	text-decoration:underline;
-	font:bold arial;
-	background:#000;
-	color:#FFFFFF;
-	text-shadow:
-		0 0 10px #fff, 
-		0 0 20px #ff00ff, 
-		0 0 30px #ff00ff, 
-		0 0 40px #ff00ff, 
-		0 0 50px #ff00ff, 
-		0 0 60px #ff00ff, 
-		0 0 70px #ff00ff;
 }
 
 #content{
@@ -95,8 +91,6 @@ th{
 	background-color:#ff19ff;
 }
 
-
-
 td, th{
 	padding:3px;
 	border:5px outset #ccc;
@@ -105,13 +99,12 @@ td, th{
 .one{
 	background-color:#ff80ff;
 }
-
 .two{
 	background-color:#ffb3ff;
 }
 
 lable{
-	padding:10px 0;
+	margin-top:10px;
 }
 
 h2{
