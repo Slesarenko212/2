@@ -75,11 +75,11 @@ td, th{
 	border:5px outset #ccc;
 }
 
-.alt{
+.one{
 	background-color:#ff80ff;
 }
 
-tr td{
+.two{
 	background-color:#ffb3ff;
 }
 
