@@ -53,6 +53,82 @@
       			</tr>
     		</table>
 
+
+
+<form action="/"
+      method="POST">
+
+      <label>
+        Имя:<br />
+        <input name="field-name-1"
+          value="введите имя" />
+      </label><br />
+
+      <label>
+        Email:<br />
+        <input name="field-email"
+          value="введите ваш email"
+          type="email" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2021-09-14"
+          type="date" />
+      </label><br />
+        Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+	 Количество конечностей:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        1</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        2</label>
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение3" />
+        3</label>
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение4" />
+        4</label>
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение5" />
+        5</label>
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение6" />
+        6</label><br />  
+	    
+	<label>
+        Сверхспособности:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+          <option value="Значение3" selected="selected">Левитация</option>
+        </select>
+      </label><br />
+	    <label>
+       Биография:<br />
+        <textarea name="field-name-2">Расскажите о себе</textarea>
+      </label><br /> 
+	  Поставьте галочку:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        с контрактом ознакомлен(а)</label><br />  
+
+      Нажмите, чтобы отправить:
+      <input type="submit" value="Отправить" />
+</form>
+
+
+
 		
 		<footer>
 			(c)Слесаренко Анастасия 2021
