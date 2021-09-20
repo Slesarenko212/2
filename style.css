@@ -20,6 +20,10 @@ header{
 	height:220px;
 }
 
+menu{
+	display: inline;
+}
+
 div{
 	max-width:960px;
 	margin:0 auto;
