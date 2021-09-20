@@ -51,6 +51,9 @@ h1{
 	clear:both;
 }
 
+a{
+	text-decoration:none;
+}
 
 footer{
 	position: absolute;
