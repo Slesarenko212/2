@@ -74,7 +74,8 @@ footer{
   	margin-bottom:0;
   	width: 100%;
  	height: 100px;
-	background-color:black;
+	background-color:#000fff;
 	padding-top:50px;
+	padding-left:10px;
 	color:#fff;
 }
