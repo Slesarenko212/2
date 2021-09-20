@@ -21,28 +21,28 @@ header{
 }
 
 #menu{
-	margin: 0;
-  	padding: 0;
-  	list-style-type: none;
-	border: 2px solid #0066FF;
-  	border-radius: 20px 5px;
-  	width: 960px;
-  	text-align: center;
-  	background-color: #fffff0;
+	margin:0;
+  	padding:0;
+  	list-style-type:none;
+	border:2px solid #ff00ff;
+  	border-radius:20px 5px;
+  	width:960px;
+  	text-align:center;
+  	background-color:#ffb3ff;
 }
 #menu li{
 	display:inline;
 }
 #menu a{
-	padding: 5px 10px;
-  	text-decoration: none;
-  	font-weight: bold;
-  	display: inline-block;
-  	width: 100px;
+	padding:5px 10px;
+  	text-decoration:none;
+  	font-weight:bold;
+  	display:inline-block;
+  	width:100px;
 }
 #menu a:hover {
-  	border-radius: 20px 5px;
-  	background-color: #0066FF;
+  	border-radius:20px 5px;
+  	background-color:#ff00ff;
 }
 
 
