@@ -27,6 +27,11 @@ body{
   flex: 3;
   order: 2;
 }
+@media screen and (min-width: 800px) {
+  #main-aside-wrapper {
+    flex-direction: row;
+  }
+}
 
 
 header img{
