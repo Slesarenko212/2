@@ -95,12 +95,12 @@ h1{
 }
 
 div{
-	max-width:960px;
+	max-width:100%;
 	margin:0 auto;
 }
 
 #content{
-	max-width:960px;
+	max-width:100%;
 	margin-left: auto;
 	margin-right: auto;
 	clear:both;
@@ -114,7 +114,7 @@ table{
 	align:center;
 	cellpadding:1px;
 	cols:3;
-	width:960px;
+	width:100%;
 	border:5px inset #ccc;
 	color:#fff;
 }
