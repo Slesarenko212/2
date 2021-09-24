@@ -12,7 +12,10 @@ body{
 
 #main-aside-wrapper {
     	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-grow:1;
+	flex-wrap:nowrap;
+	allign-content:space-between;
 	flex-grow:1;
 }
 
@@ -248,9 +251,7 @@ footer{
 
 @media screen and (min-width: 800px) {
   #main-aside-wrapper {
-    flex-direction: row;
-	  flex-wrap:nowrap;
-	  allign-content:space-between;
-	  flex-grow:1;
+    flex-direction: column;
+	 
   }
 }
