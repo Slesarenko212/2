@@ -248,5 +248,7 @@ footer{
 @media screen and (min-width: 800px) {
   #main-aside-wrapper {
     flex-direction: row;
+	  flex-wrap:wrap;
+	  allign-content:space-between;
   }
 }
