@@ -14,26 +14,6 @@ body{
 	font-size:20pt;
 }
 
-#main-aside-wrapper {
-    	display: flex;
-	flex-direction: coloumn;
-	flex-grow:1;
-}
-
-#main-aside-wrapper menu, #main-aside-wrapper aside {
-  margin: 10px;
-  padding: 10px;
-}
-#main-aside-wrapper aside {
-  flex: 1;
-  order: 1;
-}
-#main-aside-wrapper menu {
-  flex: 3;
-  order: 2;
-}
-
-
 header img{
 	float:left;
 	width:175px;
@@ -77,11 +57,9 @@ h1{
   	text-align:center;
   	background-color:#ffb3ff;
 }
-
 #menu li{
 	display:inline;
 }
-
 #menu a{
 	padding:5px 10px;
   	font-weight:bold;
@@ -95,12 +73,12 @@ h1{
 }
 
 div{
-	max-width:100%;
+	max-width:960px;
 	margin:0 auto;
 }
 
 #content{
-	max-width:100%;
+	max-width:960px;
 	margin-left: auto;
 	margin-right: auto;
 	clear:both;
@@ -114,7 +92,7 @@ table{
 	align:center;
 	cellpadding:1px;
 	cols:3;
-	width:100%;
+	width:960px;
 	border:5px inset #ccc;
 	color:#fff;
 }
