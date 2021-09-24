@@ -250,5 +250,6 @@ footer{
     flex-direction: row;
 	  flex-wrap:wrap;
 	  allign-content:space-between;
+	  flex-grow:1;
   }
 }
