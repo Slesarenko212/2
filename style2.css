@@ -10,6 +10,11 @@ body{
 
 }
 
+#main-aside-wrapper {
+    	display: flex;
+	flex-direction: column;
+}
+
 header img{
 
 	float:left;
