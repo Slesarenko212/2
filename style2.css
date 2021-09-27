@@ -47,6 +47,12 @@ h1{
 		0 0 70px #ff00ff;
 }
 
+h{
+        padding:10px;
+        font:bold;
+        font-size:25pt;
+}
+
 #menu{
 	margin:0;
   	padding:0;
