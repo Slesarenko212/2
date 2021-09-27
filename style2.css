@@ -81,13 +81,15 @@ h{
 div{
 	max-width:960px;
 	margin:10px auto;
-        height:200px;
-        width:200px;
+        height:auto;
+        width:auto;
         overflow:auto;
+        
 }
 div:hover{
         border-radius:20px 5px;
-        background-color:#fff0ff
+        background-color:#fff0ff;
+}
 
 #content{
 	max-width:960px;
