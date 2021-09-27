@@ -9,7 +9,7 @@
 
 body{
 	color:#ff00ff;
-	background-color:#2a2a2a;
+	background-color:#666666;
 	font-style: italic;
 	font-size:20pt;
 }
@@ -81,8 +81,11 @@ h{
 div{
 	max-width:960px;
 	margin:10px auto;
-        background-color:666666;
+        
 }
+div:hover{
+        border-radius:20px 5px;
+        background-color:#fff0ff
 
 #content{
 	max-width:960px;
