@@ -82,7 +82,7 @@ div{
 	max-width:960px;
 	margin:10px auto;
         height:200px;
-        white:200px;
+        width:200px;
         overflow:auto;
 }
 div:hover{
