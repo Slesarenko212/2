@@ -149,7 +149,8 @@ footer{
 
 ol form{
 	margin:10px auto;
-        height:auto;
+        height:500;
+	oversize:auto;
         border-style:double;
         border-radius:30px 15px;
         color:#ff00ff;
