@@ -1,8 +1,9 @@
-@media screen and (max-device-width:480px) {
-	#main-aside-wrapper {
-    		flex-direction: row;
-		flex-wrap:nowrap;
-		allign-content:space-between;
+@media screen and (max-device-width:480px)
+{
+	#main
+	{
+		display:flex;
+    		flex-direction:column;
 		flex-grow:1;
   	}
 }
