@@ -50,7 +50,7 @@ h1{
 h{
         padding:10px;
         font:bold;
-        font-size:25pt;
+        font-size:30pt;
 }
 
 #menu{
@@ -80,7 +80,7 @@ h{
 
 div{
 	max-width:960px;
-	margin:0 auto;
+	margin:10px auto;
         background-color:4f4f4f;
 }
 
