@@ -49,7 +49,7 @@ h1{
 
 h{
         padding:10px;
-        font:bold;
+        font-weight:bold;
         font-size:30pt;
 	text-decoration: underline;
 	margin:10px 0;
