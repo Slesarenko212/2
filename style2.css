@@ -144,9 +144,13 @@ h2{
 	font-size:15pt;
 }
 
-br /
-{
-	margin:10px 0;
+form{
+	margin:10px auto;
+        height:auto;
+        border-style:double;
+        border-radius:30px 15px;
+        color:#ff00ff;
+	padding:10px;
 }
 
 footer{
@@ -157,15 +161,4 @@ footer{
  	height: 100px;
 	background-color:#666666;
 	margin-top:20px;
-}
-
-
-
-div #spisok ol, form{
-	margin:10px auto;
-        height:auto;
-        border-style:double;
-        border-radius:30px 15px;
-        color:#ff00ff;
-	padding:10px;
 }
