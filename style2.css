@@ -20,13 +20,13 @@
 		flex-shrink:0;
 		flex-grow:1;
 	}
-	#main table
-	{
-		order:2;
-	}
-	#main form
+	#main div form
 	{
 		order:1;
+	}
+	#main div table
+	{
+		order:2;
 	}
 }
 
@@ -164,7 +164,7 @@ footer{
 
 
 
-div #spisok, form{
+#main #spisok, form{
 	margin:10px auto;
         height:auto;
         border-style:double;
