@@ -24,13 +24,13 @@
 		{
 			order:2;
 		}
-		form
-		{
-			order:3;
-		}
-		table
+		div table
 		{
 			order:4;
+		}
+		div form
+		{
+			order:3;
 		}
   	}
 }
