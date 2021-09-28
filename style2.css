@@ -1,34 +1,30 @@
-@media screen and (max-device-width:480px)
+@media all and (max-device-width:480px)
 {
 	#main
 	{
 		display:flex;
     		flex-direction:column;
-		flex-grow:1;
 	}
 	div div nav
 	{
 		display:flex;
     		flex-direction:column;
 		flex-grow:1;
-		order:1;
 	}
 	#item
 	{
 		flex-basis:100vw;
 		flex-shrink:0;
-	}
-	#spisok
-	{
-		order:2;
+		flex-grow:1;
+		margin: auto;
 	}
 	div div table
 	{
-		order:4;
+		order:2;
 	}
 	div div form
 	{
-		order:3;
+		order:1;
 	}
 }
 
