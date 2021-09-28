@@ -14,13 +14,13 @@
 	{
 		flex-grow:1;
 	}
-	#main #item
+	#main .item
 	{
 		width:100vw;
 		flex-shrink:0;
 		flex-grow:1;
 	}
-	#main #item table
+	#main table.item
 	{
 		order:1;
 	}
@@ -137,10 +137,6 @@ td, th{
 	background-color:#ffb3ff;
 }
 
-label{
-	margin-top:10px;
-}
-
 h2{
 	padding-top:35px;
 	padding-left:10px;
@@ -160,7 +156,7 @@ footer{
 
 
 
-#spisok, form{
+#spisok ol, form{
 	margin:10px auto;
         height:auto;
         border-style:double;
