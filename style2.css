@@ -15,7 +15,7 @@
 	}
 	#item
 	{
-		flex-basis:150px;
+		flex-basis:100vw;
 		flex-shrink:0;
 	}
 	div ol
