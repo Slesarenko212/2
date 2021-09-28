@@ -1,4 +1,4 @@
-@media all and (max-device-width:480px)
+@media all and (max-width:480px)
 {
 	#main
 	{
@@ -16,10 +16,9 @@
 	}
 	#item
 	{
-		flex-basis:100vw;
+		width:100vw;
 		flex-shrink:0;
 		flex-grow:1;
-		margin: auto;
 	}
 	div div table
 	{
