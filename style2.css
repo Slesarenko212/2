@@ -3,7 +3,7 @@
 	#main
 	{
 		display:flex;
-    		flex-flow: column nowrap;
+    		flex-direction:column;
 	}
 	#main nav ul
 	{
@@ -144,6 +144,11 @@ h2{
 	font-size:15pt;
 }
 
+br /
+{
+	margin:10px 0;
+}
+
 footer{
 	pozition:absolute;
   	margin-left:0;
@@ -156,7 +161,7 @@ footer{
 
 
 
-#spisok ol, form{
+div #spisok ol, form{
 	margin:10px auto;
         height:auto;
         border-style:double;
