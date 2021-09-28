@@ -163,7 +163,7 @@ footer{
 
 
 
-div #content #item, form{
+#spisok, form{
 	margin:10px auto;
         height:500;
 	oversize:auto;
