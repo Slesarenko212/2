@@ -164,7 +164,7 @@ footer{
 
 
 
-#spisok, form{
+div #spisok, form{
 	margin:10px auto;
         height:auto;
         border-style:double;
