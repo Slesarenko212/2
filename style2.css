@@ -5,20 +5,16 @@
 		display:flex;
     		flex-direction:column;
 		flex-grow:1;
-		nav ul
+		div nav
 		{
 			display:flex;
     			flex-direction:column;
 			flex-grow:1;
-			width:100vw;
+			order:1;
 		}
 		#item
 		{
-			max-width:100vw;
-		}
-		nav
-		{
-			order:1;
+			width:100vw;
 		}
 		div ol
 		{
