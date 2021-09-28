@@ -6,7 +6,7 @@
     		flex-direction:column;
 		flex-grow:1;
 	}
-	div nav
+	div div nav
 	{
 		display:flex;
     		flex-direction:column;
@@ -18,15 +18,15 @@
 		flex-basis:100vw;
 		flex-shrink:0;
 	}
-	div ol
+	#spisok
 	{
 		order:2;
 	}
-	div table
+	div div table
 	{
 		order:4;
 	}
-	div form
+	div div form
 	{
 		order:3;
 	}
