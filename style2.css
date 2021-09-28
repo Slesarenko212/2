@@ -3,7 +3,7 @@
 	#main
 	{
 		display:flex;
-    		flex-flow: column wrap;
+    		flex-flow: column nowrap;
 	}
 	#main nav ul
 	{
@@ -20,7 +20,7 @@
 		flex-shrink:0;
 		flex-grow:1;
 	}
-	#main div table
+	#main table
 	{
 		order:1;
 	}
@@ -160,7 +160,7 @@ footer{
 
 
 
-#main #spisok, form{
+#spisok, form{
 	margin:10px auto;
         height:auto;
         border-style:double;
