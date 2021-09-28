@@ -5,10 +5,13 @@
 		display:flex;
     		flex-direction:column;
 	}
-	div div nav
+	div div nav ul
 	{
 		display:flex;
     		flex-direction:column;
+	}
+	div div nav li
+	{
 		flex-grow:1;
 	}
 	#item
