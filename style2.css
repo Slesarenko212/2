@@ -147,7 +147,7 @@ footer{
 
 
 
-div ol, form{
+#content #item{
 	margin:10px auto;
         height:500;
 	oversize:auto;
