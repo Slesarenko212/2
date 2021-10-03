@@ -42,7 +42,7 @@ header img{
 	padding-right:50px;
 }
 
-header{
+.container-fluid header{
 	background-color:black;
 	height:220px;
 }
