@@ -11,7 +11,7 @@ function updatePrice() {
   
   // Скрываем или показываем радиокнопки.
   let radioDiv = document.getElementById("radios");
-  radioDiv.style.display = (select.value == "3" ? "block" : "none");
+  radioDiv.style.display = (select.value == "2" ? "none" : "block");
   
   // Смотрим какая товарная опция выбрана.
   let radios = document.getElementsByName("prodOptions");
