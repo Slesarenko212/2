@@ -92,7 +92,23 @@ span.sim-dot {
 
 
 
+@media screen and (min-width: 911px) {
+  .ant-carousel {
+    max-width: 810px;
+  }
+}
 
+@media screen and (min-width: 641px) and (max-width: 910px) {
+  .ant-carousel {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .ant-carousel {
+    max-width: 270px;
+  }
+}
 .ant-carousel {
 	max-width: 810px;  /* укажите здесь ваше значение */
 	position: relative;
