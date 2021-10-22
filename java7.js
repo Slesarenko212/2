@@ -102,7 +102,7 @@ Sim.initialize = function(that) {
 		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
 	};
 	if(that.elemCount >= 1) {   // показать первый элемент
-		that.sldrElemFirst.style.opacity = '1';
+		that.sldrElemFirst.style.opacity = '1', '2';
 	};
 
 	if(!that.options.loop) {
