@@ -25,8 +25,6 @@ Sim.defaults = {
 
 	// Default options for the carousel
 	loop: true,     // Бесконечное зацикливание слайдера
-	auto: true,     // Автоматическое пролистывание
-	interval: 5000, // Интервал между пролистыванием элементов (мс)
 	arrows: true,   // Пролистывание стрелками
 	dots: true      // Индикаторные точки
 };
@@ -96,14 +94,7 @@ Sim.initialize = function(that) {
 	function getTime() {
 		return new Date().getTime();
 	};
-	function setAutoScroll() {
-		that.autoScroll = setInterval(function() {
-			let fnTime = getTime();
-			if(fnTime - bgTime + 10 > that.options.interval) {
-				bgTime = fnTime; that.elemNext()
-			}
-		}, that.options.interval)
-	};
+	
 
 	// Start initialization
 	if(that.elemCount <= 1) {   // Отключить навигацию
@@ -116,14 +107,9 @@ Sim.initialize = function(that) {
 
 	if(!that.options.loop) {
 		that.leftArrow.style.display = 'none';  // отключить левую стрелку
-		that.options.auto = false; // отключить автопркрутку
+		
 	}
-	else if(that.options.auto) {   // инициализация автопрокруки
-		setAutoScroll();
-		// Остановка прокрутки при наведении мыши на элемент
-		that.sldrList.addEventListener('mouseenter', function() {clearInterval(that.autoScroll)}, false);
-		that.sldrList.addEventListener('mouseleave', setAutoScroll, false)
-	};
+	
 
 	if(that.options.arrows) {  // инициализация стрелок
 		that.leftArrow.addEventListener('click', function() {
