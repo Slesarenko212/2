@@ -5,8 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
     <title>Задание 8</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
-    <link rel="stylesheet" type="text/css" href="style8.css"/>
-    <script src='java8.js' defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src='main.js' defer></script>
   </head>
   <body>
   <button id="showbutton"> Show Form </button>
@@ -16,21 +16,21 @@
       <form id="contact" name="contact" method="POST" accept-charset="UTF-8">
         <label>
         Имя: <br/>
-        <input id="field1" type="text" name="txt" class="fields"/>
+        <input id="field1" type="text" name="txt"/>
         </label> <br/>  
         <label>
         email:<br />
-        <input name="field-email" value="test@example.com" type="email" class="fields"/>
+        <input name="field-email" value="test@example.com" type="email" name="mail"/>
         </label><br />
         <label>
          Message:<br/>
-          <textarea name="fieldmessage" class="fields"></textarea>
+          <textarea name="fieldmessage"></textarea>
         </label> <br/>
         <label>
-          <input name="check" type="checkbox" class="fields"/>
+          <input name="check" type="checkbox"/>
            I agree with terms of service
-        </label> <br/>
-        <input type="submit" name="subbutton" id="submitbutton" disabled/> Send!
+        </label> </br>
+        <input type="submit" name="subbutton" disabled/> Send!
         </form>
     </div>
   </div>
