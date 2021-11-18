@@ -1,97 +1,75 @@
-function updatePrice() {
-  // Находим select по имени в DOM.
-  let s = document.getElementsByName("prodType");
-  let select = s[0];
-  let price = 0;
-  let prices = getPrices();
-  let priceIndex = parseInt(select.value) - 1;
-  if (priceIndex >= 0) {
-    price = prices.prodTypes[priceIndex];
+let modal = {
+  closeModal: ()=>{
+    this.wrapper.style.display = "none";
+    window.history.pushState({"formtoggle": false},"","8.html");
+  },
+  openModal: ()=>{
+    this.wrapper.style.display = "flex";
+    window.history.pushState({"formtoggle": true},"","#form");
   }
-  
-  // Скрываем или показываем радиокнопки.
-  let radioDiv = document.getElementById("radios");
-  radioDiv.style.display = (select.value == "2" ? "none" : "block");
-  
-  // Смотрим какая товарная опция выбрана.
-  let radios = document.getElementsByName("prodOptions");
-  radios.forEach(function(radio) {
-    if (radio.checked) {
-      let optionPrice = prices.prodOptions[radio.value];
-      if (optionPrice !== undefined) {
-        price += optionPrice;
-      }
-    }
+};
+window.addEventListener("DOMContentLoaded", function(event){
+  modal["showbutton"] = document.getElementById("showbutton");
+  modal["wrapper"] = document.getElementById("wrapper");
+  modal["closeX"] = document.getElementById("close"); //closing on X
+  modal["fields"] = document.querySelectorAll(".fields");
+  modal["submitButton"] = document.getElementById("submitbutton");
+  modal["postForm"] = document.getElementById("contact");
+  modal.fields.forEach((element) => {   // LOCAL STORAGE REALIZATION
+      element.value = localStorage.getItem(element.name);
+      element.addEventListener("blur",
+      (event)=>localStorage.setItem(event.target.name, event.target.value));
   });
-
-  // Скрываем или показываем чекбоксы.
-  let checkDiv = document.getElementById("checkboxes");
-  checkDiv.style.display = (select.value == "3" ? "none" : "block");
-
-  // Смотрим какие товарные свойства выбраны.
-  let checkboxes = document.querySelectorAll("#checkboxes input");
-  checkboxes.forEach(function(checkbox) {
-    if (checkbox.checked) {
-      let propPrice = prices.prodProperties[checkbox.name];
-      if (propPrice !== undefined) {
-        price += propPrice;
-      }
-    }
-  });
-  
-  let prodPrice = document.getElementById("prodPrice");
-  prodPrice.innerHTML = price + " рублей";
-}
-
-function getPrices() {
-  return {
-    prodTypes: [100, 200, 150],
-    prodOptions: {
-      option2: 10,
-      option3: 5,
-    },
-    prodProperties: {
-      prop1: 1,
-      prop2: 2,
-    }
+  modal.closeX.addEventListener("click",modal.closeModal);
+  modal.showbutton.onclick = modal.openModal;
+  window.onclick = function(event) { //CLOSES WINDOW ON CLICKING OUTSIDE IT
+  if(event.target === modal.wrapper)
+  {
+   modal.closeModal();
+  }
   };
-}
-
-window.addEventListener('DOMContentLoaded', function (event) {
-  // Скрываем радиокнопки.
-  let radioDiv = document.getElementById("radios");
-  radioDiv.style.display = "none";
-  
-  // Находим select по имени в DOM.
-  let s = document.getElementsByName("prodType");
-  let select = s[0];
-  // Назначаем обработчик на изменение select.
-  select.addEventListener("change", function(event) {
-    let target = event.target;
-    console.log(target.value);
-    updatePrice();
+  window.history.pushState({"formtoggle": false},"","8.html"); // HISTORY API REALIZATION
+  window.addEventListener("popstate",(event) => {
+  (event.state.formtoggle)? (modal.wrapper.style.display = "flex") : (modal.wrapper.style.display = "none");
   });
-  
-  // Назначаем обработчик радиокнопок.  
-  let radios = document.getElementsByName("prodOptions");
-  radios.forEach(function(radio) {
-    radio.addEventListener("change", function(event) {
-      let r = event.target;
-      console.log(r.value);
-      updatePrice();
-    });
+  window.addEventListener("keydown",function(event){ //CLOSES WINDOW ON ESC HIT
+      if(modal.wrapper.style.display!=="none")
+      {
+          switch(event.key){
+              case "Esc":
+              case "Escape":
+                  modal.closeModal();
+              break;
+      }
+  }
   });
-
-    // Назначаем обработчик радиокнопок.  
-  let checkboxes = document.querySelectorAll("#checkboxes input");
-  checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener("change", function(event) {
-      let c = event.target;
-      console.log(c.name);
-      console.log(c.value);
-      updatePrice();
-    });
+  (modal.fields.item(3).checked)? (modal.submitButton.disabled=false) : (modal.submitButton.disabled=true);
+  modal.fields.item(3).addEventListener("change", (event)=>
+  {(event.target.checked)? (modal.submitButton.disabled=false) : (modal.submitButton.disabled=true);});
+  modal.postForm.addEventListener("submit", function(event){  //AJAX USING FETCH
+      event.preventDefault();
+      fetch("https://formcarry.com/s/KAkRhB37_6s",
+      {
+          method:"POST",
+          headers:
+          {
+              "Content-type": "application/json",
+              "Accept": "application/json"
+          },
+          body: JSON.stringify(Object.fromEntries(new FormData(modal.postForm)))
+      })
+      .then(function(response){
+          if(!response.ok)
+          {
+              throw new Error(response.status);
+          }
+          return response;
+      })
+      .then((response)=>{alert("Успешная отправка");
+          console.log(response.text());})
+      .catch((error)=>{alert("Ошибка отправки");
+          console.log(error);});
+      modal.fields.forEach((element) => {element.value = "";});
+      localStorage.clear();
   });
-
-  updatePrice();
 });
