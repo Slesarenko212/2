@@ -5,7 +5,7 @@ let modal = {
   },
   openModal: ()=>{
     this.wrapper.style.display = "flex";
-    window.history.pushState({"formtoggle": true},"","#form");
+    window.history.pushState({"formtoggle": true},"","/form");
   }
 };
 window.addEventListener("DOMContentLoaded", function(event){
