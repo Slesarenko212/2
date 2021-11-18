@@ -1,7 +1,7 @@
 let modal = {
   closeModal: ()=>{
     this.wrapper.style.display = "none";
-    window.history.pushState({"formtoggle": false},"","8.html");
+    window.history.pushState({"formtoggle": false},"","index8.html");
   },
   openModal: ()=>{
     this.wrapper.style.display = "flex";
