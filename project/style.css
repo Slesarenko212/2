@@ -3,6 +3,7 @@
 }
 
 header {
+    position: relative;
     margin: 0;
     font-family: Arial;
     font-size: 17px;
@@ -17,7 +18,7 @@ header {
 }
 
 .vid-content {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     color: #f1f1f1;
@@ -26,7 +27,7 @@ header {
 }
 
 img {
-    position: relative;
+    position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     	
