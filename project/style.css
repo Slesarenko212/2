@@ -20,7 +20,7 @@ header {
 .vid-content {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
@@ -29,7 +29,7 @@ header {
 img {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     	
     float:left;
     width:100px;
