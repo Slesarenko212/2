@@ -26,7 +26,7 @@ header {
 }
 
 img {
-    position: fixed;
+    position: relative;
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     	
