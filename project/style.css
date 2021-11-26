@@ -8,6 +8,7 @@ body {
     font-size: 17px;
 
 #video {
+    margin:0
     position: fixed;
     right: 0;
     bottom: 0;
