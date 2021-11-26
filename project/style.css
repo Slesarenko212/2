@@ -26,9 +26,13 @@ header {
 }
 
 img {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    	
     float:left;
-	width:100px;
-	height:100px;
-	padding:10px;
-	padding-left:50px;
+    width:100px;
+    height:100px;
+    padding:20px;
+    padding-left:50px;
 }
