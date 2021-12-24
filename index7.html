@@ -1,32 +1,54 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset='utf-8'/>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
-    <title>Задание 7</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"/> 
-    <link rel="stylesheet" type="text/css" href="style7.css"/>
-    <script src='java7.js' defer></script>
-  </head>
-  <body>
-    <div class ="container-fluid">
-      <div class="row">
-        <div class="col-2">
-        </div>
-        <div class="col-8  my-4">
-          <div class="imgslide d-flex align-items-center">
-            <div><img src="logo1.png" height="240" width="240" alt="1"/></div>
+
+        <div class="col-8  my
+            <div><img src="logo1.png" he-4">
+          <div class="imgight="240" width="240" alt="1"/></div>
             <div><img src="http://pvbk.spb.ru/inc/slider/imgs/planet1.jpg" height="240" width="240" alt="2"/></div>
             <div><img src="http://pvbk.spb.ru/inc/slider/imgs/planet2.jpg" height="240" width="240" alt="3"/></div>
             <div><img src="http://pvbk.spb.ru/inc/slider/imgs/planet3.jpg" height="240" width="240" alt="4"/></div>
             <div><img src="http://pvbk.spb.ru/inc/slider/imgs/planet4.jpg" height="240" width="240" alt="5"/></div>
             <div><img src="http://pvbk.spb.ru/inc/slider/imgs/planet5.jpg" height="240" width="240" alt="6"/></div>
-          </div>
-        </div>
-        <div class="col-2">
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+    
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style7.css"/>
+  <script src='java7.js' defer></script>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="logo1.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://pvbk.spb.ru/inc/slider/imgs/planet1.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="http://pvbk.spb.ru/inc/slider/imgs/planet2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</body>
+</html> 
