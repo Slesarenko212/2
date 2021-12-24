@@ -12,12 +12,14 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    border-style:double;
+    border-radius:30px 15px;
+    color:#ff00ff;
     transform: translate(-50%, -50%);
-    color: blue;
 }
 #contact {
     padding: 10px;
-    background-color: cadetblue;
+    background-color: blue;
 }
 #close{
         float: right;
