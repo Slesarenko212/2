@@ -5,86 +5,14 @@ body{
 	font-size:20pt;
 }
 
-header img{
-	float:left;
-	width:175px;
-	height:200px;
-	padding:10px;
-	padding-right:50px;
-}
-
 .container-fluid header{
 	background-color:black;
 	height:220px;
 }
 
-h1{
-	margin:0;
-	padding-top:50px;
-	font-size:64pt;
-	text-decoration:underline;
-	font:bold arial;
-	background:#000;
-	color:#ffffff;
-	text-shadow:
-		0 0 10px #fff, 
-		0 0 20px #ff00ff, 
-		0 0 30px #ff00ff, 
-		0 0 40px #ff00ff, 
-		0 0 50px #ff00ff, 
-		0 0 60px #ff00ff, 
-		0 0 70px #ff00ff;
-}
-
-#menu{
-	margin:0;
-  	padding:0;
-  	list-style-type:none;
-	border:2px solid #ff00ff;
-  	border-radius:5px;
-  	width:960px;
-  	text-align:center;
-  	background-color:#ffb3ff;
-}
-#menu li{
-	display:inline;
-}
-#menu a{
-	padding:5px 10px;
-  	font-weight:bold;
-  	display:inline-block;
-  	width:100px;
-}
-
-#menu a:hover {
-  	border-radius:20px 5px;
-  	background-color:#ff00ff;
-}
-
 div{
 	max-width:960px;
 	margin:0 auto;
-}
-
-
-
-
-#content{
-	max-width:960px;
-	margin-left: auto;
-	margin-right: auto;
-	clear:both;
-}
-
-a{
-	text-decoration:none;
-}
-
-h2{
-	padding-top:35px;
-	padding-left:10px;
-	color:#fff;
-	font-size:15pt;
 }
 
 form{
@@ -102,15 +30,4 @@ body {
 font-family: sans-serif; 
 margin: auto;  
 max-width: 1280px;
-}
-
-.navbar {  
-border-radius: 2px;  
-max-width: 800px;
-}
-
-.navbar a {   
-display: inline-block; 
-font-size: 15px;  
-padding: 10px; 
 }
