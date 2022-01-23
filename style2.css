@@ -24,9 +24,13 @@
 	{
 		display:flex;
 	}
-	#main .fl table.item
+	#main .fl .item table
 	{
 		order:1;
+	}
+	#main .fl #content form
+	{
+		order:0;
 	}
 }
 
