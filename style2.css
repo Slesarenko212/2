@@ -23,6 +23,7 @@
 	#main .fl
 	{
 		display:flex;
+		flex-direction:column;
 	}
 	#main .fl table
 	{
