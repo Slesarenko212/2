@@ -10,6 +10,20 @@ body {
     overflow: hidden;
 }
 
+.button {
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 40%;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -30,20 +44,6 @@ body {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
-}
-
-.button {
-  background-color: yellow;
-  border: none;
-  color: black;
-  padding: 20px 34px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50%;
 }
 
 /* Right-aligned section inside the top navigation */
