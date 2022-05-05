@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 #line {
   border-top: solid 23px #000;
 }
@@ -14,12 +15,12 @@ body {
 .button {
   background-color: yellow;
   border: none;
-  color: black;
+  text-color: black;
   padding: 20px 34px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 50px;
