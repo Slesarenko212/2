@@ -16,13 +16,12 @@ a.button {
   background-color: yellow;
   border: none;
   text-color: black;
-  padding: 18px 70.5px;
-  margin: 4px 10px 4px 30px;
+  padding: 8.5px 70.5px;
+  margin: 15px 10px 15px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 50px;
 }
