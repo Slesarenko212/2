@@ -65,6 +65,6 @@ p div h1 {
 }
 
 p {
-  float: left;
+  display: inline-block;
   padding: 30px;
 }
