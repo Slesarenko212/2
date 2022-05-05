@@ -12,12 +12,20 @@ body {
   height: 71px;
 }
 
+.topnav a.button {
+  text-color: black;
+}
+
+.topnav a.button:hover {
+  background-color: #F178B6;
+}
+
 a.button {
   background-color: yellow;
   border: none;
   text-color: black;
   padding: 8.5px 70.5px;
-  margin: 15px 10px 15px 30px;
+  margin: 0 10px 0 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
