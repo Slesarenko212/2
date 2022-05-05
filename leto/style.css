@@ -59,7 +59,12 @@ a.button {
    padding: 0 20px 20px 0;
 }
 
-p {
+h1 {
   font-weight: bold;
   font-size: 40px;
+}
+
+p {
+  display: inline;
+  padding: 30px;
 }
