@@ -65,6 +65,6 @@ h1 {
 }
 
 p {
-  display: inline;
+  float: left;
   padding: 30px;
 }
