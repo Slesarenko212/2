@@ -82,6 +82,6 @@ a.button.active {
 }
 
 .l1 {
-  display: inline-block;
+  float: left;
   padding: 30px;
 }
