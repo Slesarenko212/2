@@ -58,3 +58,8 @@ a.button {
    float: left;
    padding: 0 20px 20px 0;
 }
+
+p {
+  font-weight: bold;
+  font-size: 40px;
+}
