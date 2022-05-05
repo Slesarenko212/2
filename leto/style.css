@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+}
+#line {
+  border-top: solid 2px #000;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
