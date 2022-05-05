@@ -26,6 +26,15 @@ a.button {
   border-radius: 50px;
 }
 
+a.button:hover {
+  background-color: #ddd;
+}
+
+a.button.active {
+  background-color: yellow;
+  color: black;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
