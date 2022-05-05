@@ -16,7 +16,8 @@ a.button {
   background-color: yellow;
   border: none;
   text-color: black;
-  padding: 20px 70.5px;
+  padding: 18px 70.5px;
+  margin: 4px 10px 4px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
