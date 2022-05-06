@@ -102,7 +102,11 @@ a.button.active {
 }
 
 .l2 img {
-  margin: 20px;
+  margin: 30px;
+}
+
+.l2 .logo2 {
+  width: 50%;
 }
 
 p {
