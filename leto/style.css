@@ -14,7 +14,8 @@ body {
 
 .topnav a.button {
   color: black;
-  padding: 5px 70.5px;
+  padding: 5px 15px;
+  vertical-align: middle;
   text-align: center;
 }
 
