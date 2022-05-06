@@ -83,7 +83,7 @@ a.button.active {
   font-size: 40px;
 }
 
-.l1 {
+.l1 div{
   float: left;
   padding: 30px;
 }
