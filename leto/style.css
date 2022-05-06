@@ -15,7 +15,8 @@ body {
 .topnav a.button {
   color: black;
   padding: 5px 15px;
-  margin-top: 10px;
+  margin-top: 18px;
+  margin-left: 50px;
   text-align: center;
 }
 
@@ -90,6 +91,9 @@ a.button.active {
   justify-content: center;
 }
 
+.l1 .logo1 {
+  margin: 20px;
+}
 
 .l2 {
   display: flex;
