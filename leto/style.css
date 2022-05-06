@@ -15,6 +15,7 @@ body {
 .topnav a.button {
   color: black;
   padding: 5px 70.5px;
+  text-align: center;
 }
 
 .topnav a.button:hover {
