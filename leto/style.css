@@ -14,6 +14,7 @@ body {
 
 .topnav a.button {
   color: black;
+  padding: 5px 70.5px;
 }
 
 .topnav a.button:hover {
@@ -24,7 +25,7 @@ a.button {
   background-color: yellow;
   border: none;
   text-color: black;
-  padding: 5px 70.5px;
+  padding: 7px 60px;
   margin: 0 10px 0 30px;
   text-align: center;
   text-decoration: none;
