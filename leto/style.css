@@ -82,12 +82,12 @@ a.button.active {
 }
 
 .l1 {
-  float: left;
+  display: inline-block;
   padding: 30px;
 }
 
 .l2{
-  float: left;
+  display: inline-block;
   padding: 30px;
 }
 
