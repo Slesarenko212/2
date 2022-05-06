@@ -13,6 +13,8 @@ body {
 }
 
 .topnav a.button {
+  width: 95px;
+  height: 41px;
   text-color: black;
 }
 
