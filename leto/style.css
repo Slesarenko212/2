@@ -101,11 +101,8 @@ a.button.active {
   justify-content: center;
 }
 
-.l2 img {
-  margin: 30px;
-}
-
 .l2 .logo2 {
+  margin: 30px;
   width: 50%;
 }
 
