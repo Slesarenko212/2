@@ -86,6 +86,11 @@ a.button.active {
   padding: 30px;
 }
 
+.l2{
+  float: left;
+  padding: 30px;
+}
+
 p {
   font-weight: bold;
   font-size: 32px;
