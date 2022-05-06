@@ -90,6 +90,10 @@ a.button.active {
   justify-content: center;
 }
 
+.l1 img {
+  margin: 20px;
+}
+
 .l2 {
   display: flex;
   flex-direction: row;
