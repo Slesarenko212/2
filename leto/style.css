@@ -137,6 +137,7 @@ h2 {
 .l3 {
   background-image: url(fon.jpg);
   position: relative;
+  background-repeat: no-repeat;
 }
 
 l3.img {
