@@ -124,8 +124,17 @@ li {
   list-style-type: none;
 }
 
+
+
+
 h2 {
   font-weight: bold;
   font-size: 64px;
   margin: 20px 0;
+  text-align: center;
+}
+
+.fon {
+  display:block;
+  margin:auto;
 }
