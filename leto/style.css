@@ -138,14 +138,13 @@ h2 {
 
 div.fon {
   z-index: 1;
+  position: absolute;
   width: 1178px;
 }
 
 div.nout {
   z-index: 2;
-  position: static;
+  position: relative;
   width: 859.12px;
   height: 755px;
-  right: 0;
-  buttom: 0;
 }
