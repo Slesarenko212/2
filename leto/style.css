@@ -135,9 +135,11 @@ h2 {
 }
 
 
+.fon {
+  width: 1178px;
+}
 
 .nout {
-  background-image: url("fon.jpg");
   width: 859.12px;
   height: 755px;
   float: right;
