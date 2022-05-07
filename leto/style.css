@@ -134,13 +134,18 @@ h2 {
   text-align: center;
 }
 
-
-.fon {
-  width: 1178px;
+.l3 {
+  background-image: url(fon.jpg);
+  position: relative;
 }
 
 .nout {
+  position: absolute;
   width: 859.12px;
   height: 755px;
   float: right;
+}
+
+.fon {
+  width: 1178px;
 }
