@@ -137,7 +137,6 @@ h2 {
 }
 
 .l3 {
-  background-image: url(fon.jpg);
   position: relative;
   background-repeat: no-repeat;
   background-position: left top;
@@ -145,10 +144,16 @@ h2 {
   width: 1402px;
 }
 
-.nout {
+div.fon {
+  z-index: 1;
+  width: 1178px;
+}
+
+div.nout {
+  z-index: 2;
   position: absolute;
   width: 859.12px;
   height: 755px;
-  float: right;
+  right: 0;
   buttom: 0;
 }
