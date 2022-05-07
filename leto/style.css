@@ -145,6 +145,9 @@ div.fon {
 div.nout {
   z-index: 2;
   position: relative;
+}
+
+div.nout img {
   width: 859.12px;
   height: 755px;
 }
