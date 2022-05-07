@@ -136,14 +136,6 @@ h2 {
   text-align: center;
 }
 
-.l3 {
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-width: 1178px;
-  width: 1402px;
-}
-
 div.fon {
   z-index: 1;
   width: 1178px;
@@ -151,7 +143,7 @@ div.fon {
 
 div.nout {
   z-index: 2;
-  position: absolute;
+  position: static;
   width: 859.12px;
   height: 755px;
   right: 0;
