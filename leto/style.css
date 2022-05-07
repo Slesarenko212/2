@@ -161,6 +161,7 @@ div.nout img {
 
 
 footer {
+  all: initial;
   background-color: #333;
   color: white;
   font-weight: bold;
