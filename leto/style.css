@@ -165,4 +165,7 @@ footer {
   color: white;
   font-weight: bold;
   font-size: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
