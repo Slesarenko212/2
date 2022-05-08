@@ -140,7 +140,7 @@ div.fon {
   z-index: auto;
   position: absolute;
   width: 1178px;
-  margin-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 div.nout {
