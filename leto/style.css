@@ -171,26 +171,3 @@ footer {
   float: bottom;
 }
 
-
-
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-html,
-body {
-  height: 100%;
-}
-.l3 {
-  padding-bottom: 200px;
-}
-.footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 190px;
-}
