@@ -171,4 +171,5 @@ footer {
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  float: bottom;
 }
