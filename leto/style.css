@@ -16,7 +16,7 @@ body {
   height: 71px;
 }
 
-.topnav a.button {
+.topnav button {
   color: black;
   padding: 5px 15px;
   margin-top: 18px;
@@ -25,7 +25,7 @@ body {
   text-align: center;
 }
 
-.topnav a.button:hover {
+.topnav button:hover {
   background-color: #F178B6;
 }
 
@@ -43,11 +43,11 @@ a.button, button{
   border-radius: 50px;
 }
 
-a.button:hover {
+a.button, button:hover {
   background-color: #F178B6;
 }
 
-a.button.active {
+a.button.active, button.active {
   background-color: yellow;
   color: black;
 }
