@@ -29,7 +29,7 @@ body {
   background-color: #F178B6;
 }
 
-a.button {
+a.button, button{
   background-color: yellow;
   border: none;
   color: black;
