@@ -107,11 +107,11 @@ button.active {
 }
 
 .left h1{
-  margin: 30px 30px 20px;
+  margin: 30px 40px 20px 30px;
 }
 
 .left a{
-  margin: 0 30px;
+  margin: 0 40px 0 30px;
 }
 
 .l1 div h1 {
