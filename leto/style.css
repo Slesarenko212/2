@@ -5,6 +5,7 @@ body {
 #line {
   width: 100%;
   border-top: solid 23px #000;
+  margin: 0;
 }
 
 .topnav {
@@ -159,7 +160,7 @@ div.nout img {
 
 
 footer {
-  z-index: auto;
+  position: absolute;
   background-color: #333;
   color: white;
   font-weight: bold;
@@ -168,6 +169,5 @@ footer {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  float: bottom;
 }
 
