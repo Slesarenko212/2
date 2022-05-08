@@ -92,20 +92,19 @@ button.active {
   color: black;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
 }
 
-/* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
 }
 
 .left {
-   float: left;
-   padding: 0 20px 30px 20px;
+  float: left;
+  padding: 0 20px 30px 20px;
+  margin: 0 20px;
 }
 
 .l1 div h1 {
