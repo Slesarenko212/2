@@ -29,7 +29,7 @@ body {
   background-color: #F178B6;
 }
 
-a.button, button{
+a.button {
   background-color: yellow;
   border: none;
   color: black;
@@ -43,11 +43,34 @@ a.button, button{
   border-radius: 50px;
 }
 
-a.button, button:hover {
+button {
+  background-color: yellow;
+  border: none;
+  color: black;
+  padding: 12px 35px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+a.button:hover {
   background-color: #F178B6;
 }
 
-a.button.active, button.active {
+button:hover {
+  background-color: #F178B6;
+}
+
+a.button.active {
+  background-color: yellow;
+  color: black;
+}
+
+button.active {
   background-color: yellow;
   color: black;
 }
