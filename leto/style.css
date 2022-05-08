@@ -161,7 +161,7 @@ div.nout img {
 
 
 footer {
-  all: initial;
+  z-index: auto;
   background-color: #333;
   color: white;
   font-weight: bold;
@@ -169,4 +169,5 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 }
