@@ -145,7 +145,8 @@ div.fon {
 div.nout {
   z-index: 2;
   position: relative;
-  right: 0;
+  left: 659px;
+  top: 513px;
 }
 
 div.nout img {
