@@ -225,14 +225,14 @@ form h1 {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
   padding-top: 60px;
-  border-radius: 5px;
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
-  width: 554px; /* Could be more or less, depending on screen size */
+  width: 554px;
+  border-radius: 5px;
 }
 
 .animate {
