@@ -314,6 +314,46 @@ form h1 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 554.5px;
+    height: 0px;
+    background: #F3FD00;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border: 1px solid #F9FF21;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);  
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+	height: 22px;
+    background: #FFFFFF;
+	border: 5px solid #F3FD00;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    cursor: pointer;
+}
+
+
+
+
 
 
 
