@@ -258,8 +258,9 @@ form h1 {
   to {transform: scale(1)}
 }
 
-
-
+.custom-select {
+  width: 487px;
+}
 
 
 
