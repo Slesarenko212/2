@@ -1,3 +1,3 @@
-$('.INN').on('input', function() {
-    $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
+document.querySelector('.INN').addEventListener('keyup', function(){
+    this.value = this.value.replace(/[^\d]/g, '');
 });
