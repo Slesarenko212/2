@@ -43,11 +43,14 @@
             <form id="ChS_INN" name="ChS_INN" method="POST" onsubmit="return false;" accept-charset="UTF-8">
                 <div class="mb-3">
                     <br/> ИНН <br/><br/>
-                    <input id="INN" type="text" class="INN"/>
+                    <input class="form-control INN" id="INN" type="text">
                 </div>
                 <div class="mb-3">
                     <br/> Причина добавления в ЧС <br/><br/>
-                    <textarea class="form-control cause_ChS" id="cause_ChS" rows="3" placeholder = "причина"></textarea>
+                    <textarea class="form-control is-invalid cause_ChS" id="cause_ChS" rows="3" placeholder = "причина" required></textarea>
+                    <div class="invalid-feedback">
+                        Пожалуйста, укажите причину.
+                    </div>
                 </div>
                 <button name="subbutton" id="submit_button_1">Добавить в ЧС</button>
             </form>
