@@ -18,3 +18,9 @@ body {
 h1, h3{
   font-weight: bold;
 }
+
+button.btn-style {
+  background: yellow;
+  border-radius: 25px;
+  font-size: 24px;
+}
