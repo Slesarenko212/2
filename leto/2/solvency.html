@@ -45,20 +45,20 @@
                 <div class=" row mb-3">
                     <label for="inputIncome" class="col-sm-2 col-form-label">ежемесячный доход</label>
                     <div class="col-sm-7">
-                        <input type="number" class="form-control Income" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" id="income" required>
+                        <input class="form-control Income" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" id="income" required>
                     </div>
                 </div>
               
                 <div class="row mb-3">
                     <label for="inputDuty" class="col-sm-2 col-form-label">ежемесячный долг</label>
                     <div class="col-sm-7">
-                        <input type="number" class="form-control Duty" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" id="duty" required>
+                        <input class="form-control Duty" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" id="duty" required>
                     </div>
                 </div>
                 <button onclick="Solvency()" class="btn btn-style my-5" style="color: black;">рассчитать</button>
-                <div class="row mb-3">
+                <div class="row my-3">
                     <label for="outputSolvency" class="col-sm-3 col-form-label">максимально возможная ежемесячная платежеспособность клиента:</label>
-                    <div class="col-sm-2" style="background-color: #999999; color: black;">
+                    <div class="col-sm-1" style="background-color: #999999; color: black;">
                         <p id="solvency">0</p>
                     </div>
                 </div>
