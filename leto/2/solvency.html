@@ -44,21 +44,21 @@
             <form id="Solvency" name="Solvency">
                 <div class=" row mb-3">
                     <label for="inputIncome" class="col-sm-2 col-form-label">ежемесячный доход</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-7">
                         <input type="number" class="form-control Income" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" id="income" required>
                     </div>
                 </div>
               
                 <div class="row mb-3">
                     <label for="inputDuty" class="col-sm-2 col-form-label">ежемесячный долг</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-7">
                         <input type="number" class="form-control Duty" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" id="duty" required>
                     </div>
                 </div>
                 <button onclick="Solvency()" class="btn btn-style my-5" style="color: black;">рассчитать</button>
                 <div class="row mb-3">
-                    <label for="outputSolvency" class="col-sm-5 col-form-label">максимально возможная ежемесячная платежеспособность клиента:</label>
-                    <div class="col-sm-10" style="background-color: #999999; color: black;">
+                    <label for="outputSolvency" class="col-sm-3 col-form-label">максимально возможная ежемесячная платежеспособность клиента:</label>
+                    <div class="col-sm-2" style="background-color: #999999; color: black;">
                         <output id="solvency"></output>
                     </div>
                 </div>
