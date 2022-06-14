@@ -58,9 +58,14 @@
                 <button onclick="Solvency()" class="btn btn-style my-5" style="color: black;">рассчитать</button>
                 <div class="row my-3">
                     <label for="outputSolvency" class="col-sm-3 col-form-label">максимально возможная ежемесячная платежеспособность клиента:</label>
-                    <div class="col-sm-1" style="background-color: #999999; color: black;">
-                        <div id="solvency"></div>
-                    </div>
+                    <div id="solvency" class="col-sm-1" style="background-color: #999999; color: black;"></div>
+                    <script>function Solvency(){
+                            var income = Number(document.getElementById("income").value);
+                            var duty = Number(document.getElementById("duty").value);
+                            var solvency = income * 0.8 - duty - 14000;
+
+                            solvency.innerHTML = solvency;}
+                    </script>
                 </div>
             </form>
         
