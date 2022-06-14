@@ -5,7 +5,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="solvency.css"/>
         <link rel="stylesheet" href="nav-style.css"/>
-        <script src="solvency.js"></script>
+        
     </head>
 
     <body>
@@ -64,7 +64,7 @@
                             var duty = Number(document.getElementById("duty").value);
                             var result = income * 0.8 - duty - 14000;
 
-                            solvency.innerHTML = result;}
+                            document.getElementById("solvency").innerHTML = result;}
                     </script>
                 </div>
             </form>
