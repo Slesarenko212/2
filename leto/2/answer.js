@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
         let answer_var = document.getElementById("answer");
         
         if (answer.value != 0)
-            alert("Ответ отправлен")
+            alert("Ответ отправлен!")
         else
             alert("Введите текст ответа!");
         });
