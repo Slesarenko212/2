@@ -8,8 +8,22 @@ window.addEventListener('DOMContentLoaded', function (event) {
             alert("Успешно!")
         else
             if ((inn_var.value != 0)&&(chs_var.value != 0))
-                alert("Проверьте ИНН!")
+                showError('inn', 'Неверно заполнено поле!');
             else
                 alert("Введите данные!");
         });
     });
+
+function showError(field, errorMessage) {
+	var errorSpan = document.createElement("span");
+	var errorMessage = document.createTextNode(errorMessage);
+
+	errorSpan.appendChild(errorMessage);
+	errorSpan.className = "errorMsg";
+
+	var fieldLabel = document.getElementById(field).previousSibling;
+	while (fieldLabel.nodeName.toLowerCase() != "label") {
+		fieldLabel = fieldLabel.previousSibling;
+	}
+	fieldLabel.appendChild(errorSpan);
+}
