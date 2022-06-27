@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
         if (inn_var.value == 0)
 		showError('inn', 'Заполните поле!');
         if (chs_var.value == 0)
-                showError('chs', 'Заполните поле!');
+                chsError('chs', 'Заполните поле!');
         if ((inn_var.value != 0)&&(inn_var.value.length != 12))
 		showError('inn', 'Проверьте ИНН!');
         });
@@ -19,6 +19,21 @@ function showError(field, errorMessage) {
 
 	errorSpan.appendChild(errorMessage);
 	errorSpan.className = "errorMsg";
+
+	var fieldLabel = document.getElementById(field).previousSibling;
+	while (fieldLabel.nodeName.toLowerCase() != "label") {
+		fieldLabel = fieldLabel.previousSibling;
+	}
+	fieldLabel.appendChild(errorSpan);
+}
+
+
+function chsError(field, chserrorMessage) {
+	var errorSpan = document.createElement("span");
+	var chserrorMessage = document.createTextNode(chserrorMessage);
+
+	errorSpan.appendChild(chserrorMessage);
+	errorSpan.className = "chserrorMsg";
 
 	var fieldLabel = document.getElementById(field).previousSibling;
 	while (fieldLabel.nodeName.toLowerCase() != "label") {
