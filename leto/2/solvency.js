@@ -6,14 +6,13 @@ window.addEventListener('DOMContentLoaded', function (event) {
         let solvency_var = document.getElementById("solvency");
         
         if ((income_var.value != 0)&&(duty_var.value != 0))
-            solvency_var.innerHTML = Math.ceil(income_var.value * 0.8 - duty_var.value - 14000)
-        else
-        {
-            if (income_var.value == 0)
-                showError('income', 'Заполните поле!');
-            if (duty_var.value == 0)
-                showError('duty', 'Заполните поле!');
-        }
+            solvency_var.innerHTML = Math.ceil(income_var.value * 0.8 - duty_var.value - 14000);
+        
+        if (income_var.value == 0)
+            showError('income', 'Заполните поле!');
+        if (duty_var.value == 0)
+            showError('duty', 'Заполните поле!');
+        
         });
     });
 
