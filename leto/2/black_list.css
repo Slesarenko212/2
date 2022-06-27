@@ -42,3 +42,12 @@ form label {
   color: red;
   font-size: 18px;
 }
+
+.chserrorMsg {
+  position: absolute;
+  left: 0;
+  top: 300px;
+  width: 200px;
+  color: red;
+  font-size: 18px;
+}
