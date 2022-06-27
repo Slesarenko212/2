@@ -8,9 +8,18 @@ window.addEventListener('DOMContentLoaded', function (event) {
             alert("Успешно!")
         else
             if ((inn_var.value != 0)&&(chs_var.value != 0))
-                showError('inn', 'Неверно заполнено поле!');
+                showError('inn', 'Проверьте ИНН!')
             else
-                alert("Введите данные!");
+		if (inn_var.value != 0)
+	    		showError('chs', 'Заполните поле!')
+	    	else
+			if (chs_var.value != 0)
+				showError('inn', 'Заполните поле!')
+	    		else
+			{
+				showError('inn', 'Заполните поле!');
+				showError('chs', 'Заполните поле!');
+			}
         });
     });
 
