@@ -34,6 +34,14 @@ form label {
   font-size: 24px;
 }
 
+form input {
+  position: relative;
+}
+
+form textarea {
+  position: relative;
+}
+
 .errorMsg {
   position: absolute;
   left: 0;
