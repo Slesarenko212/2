@@ -5,14 +5,12 @@ window.addEventListener('DOMContentLoaded', function (event) {
         let duty_var = document.getElementById("duty");
         let solvency_var = document.getElementById("solvency");
         
-        if ((income_var.value != 0)&&(duty_var.value != 0))
-            solvency_var.innerHTML = Math.ceil(income_var.value * 0.8 - duty_var.value - 14000);
-        
-        if (income_var.value == 0)
+	if (income_var.value == 0)
             showError('income', 'Заполните поле!');
         if (duty_var.value == 0)
             showError('duty', 'Заполните поле!');
-        
+        if ((income_var.value != 0)&&(duty_var.value != 0))
+            solvency_var.innerHTML = Math.ceil(income_var.value * 0.8 - duty_var.value - 14000);
         });
     });
 
