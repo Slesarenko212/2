@@ -46,7 +46,7 @@ form label {
 .chserrorMsg {
   position: absolute;
   left: 0;
-  top: 300px;
+  top: 305px;
   width: 200px;
   color: red;
   font-size: 18px;
