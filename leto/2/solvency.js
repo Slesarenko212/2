@@ -28,18 +28,3 @@ function showError(field, errorMessage) {
 	}
 	fieldLabel.appendChild(errorSpan);
 }
-
-
-function chsError(field, chserrorMessage) {
-	var errorSpan = document.createElement("span");
-	var chserrorMessage = document.createTextNode(chserrorMessage);
-
-	errorSpan.appendChild(chserrorMessage);
-	errorSpan.className = "chserrorMsg";
-
-	var fieldLabel = document.getElementById(field).previousSibling;
-	while (fieldLabel.nodeName.toLowerCase() != "label") {
-		fieldLabel = fieldLabel.previousSibling;
-	}
-	fieldLabel.appendChild(errorSpan);
-}
