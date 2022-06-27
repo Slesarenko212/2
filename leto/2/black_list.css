@@ -37,7 +37,7 @@ form label {
 .errorMsg {
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 85px;
   width: 200px;
   color: red;
   font-size: 18px;
