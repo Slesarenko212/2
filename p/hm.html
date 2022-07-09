@@ -10,11 +10,11 @@
 <body>
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход</button>
 <div id="id01" class="modal">
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate">
     <div class="container">
       <label for="psw"><b>Введите пароль:</b></label>
-      <input type="password" name="psw" required>  
-      <button type="submit">Войти</button>
+      <input type="password" name="psw" id="psw" required>  
+      <button type="submit" id="mybutt" onclick="return false;">Войти</button>
     </div>
   </form>
 </div>
