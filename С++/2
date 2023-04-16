@@ -1,0 +1,152 @@
+
+#include <iostream>
+#include <fstream>
+#include <cmath>
+#include <time.h>
+
+using namespace std;
+
+void norm(double* max, double x[], int n)
+{
+	int i;
+	*max = fabs(x[0]);
+
+	for (i = 1; i < n; i++)
+		if (fabs(x[i]) > *max)
+			*max = fabs(x[i]);
+}
+
+void mat_v(double** a, double* y, double* r, int n)
+{
+	for (int i = 0; i < n; i++) {
+		r[i] = 0;
+		for (int j = 0; j < n; j++)
+			r[i] += a[i][j] * y[j];
+	}
+}
+
+/*double dotpr(double x[], double y[], int n)
+{
+	double s = 0;
+	for (int i = 0; i < n; i++) {
+		s += x[i] * y[i];
+	}
+	return s;
+}*/
+
+double tdely(double* t, double* y, int n)
+{
+	double b = 0.0000000001;
+	double s = 0;
+	int k = 0;
+	for (int i = 0; i < n; i++)
+		if (fabs(y[i]) > b)
+		{
+			s += fabs(t[i]) / fabs(y[i]);
+			k++;
+		}
+	return (s / k);
+}
+
+void output(double** x, int n, ofstream& fout)
+{
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << x[i][j] << " ";
+			fout << x[i][j] << " ";
+		}
+		cout << endl;
+		fout << endl;
+	}
+}
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+
+	double xn, e = 0.00000001, l, l1;
+	int i, j;
+	int n = 0, d = 0, k = 1;
+
+	ifstream fmat;
+	ofstream fout;
+	//fmat.open("C:\\Users\\s0160112\\Desktop\\чм\\m1.txt");
+	//fmat.open("C:\\Users\\s0160112\\Desktop\\чм\\m2.txt");
+	//fmat.open("C:\\Users\\s0160112\\Desktop\\чм\\m3.txt");
+	//fmat.open("C:\\Users\\s0160112\\Desktop\\чм\\my1.txt");
+	//fmat.open("C:\\Users\\s0160112\\Desktop\\чм\\my2.txt");
+	fmat.open("C:\\Users\\s0160112\\Desktop\\чм\\my3.txt");
+	fout.open("C:\\Users\\s0160112\\Desktop\\чм\\result.txt");
+
+	fmat >> n;
+
+	double** A = new double* [n];
+	for (int i = 0; i < n; i++)
+		A[i] = new double[n];
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			fmat >> A[i][j];
+		}
+	}
+	double* y = new double[n];
+	double* x = new double[n];
+	double* t = new double[n]; //для хранения произведения
+
+	srand(time(NULL));
+	for (i = 0; i < n; i++)
+		y[i] = rand();
+
+	cout << "Погрешность: " << e << endl;
+	fout << "Погрешность: " << e << endl;
+	cout << "Матрица: " << endl;
+	fout << "Матрица: " << endl;
+	output(A, n, fout);
+
+	mat_v(A, y, t, n);
+	l = tdely(t, y, n);
+		//dotpr(y, t, n) / dotpr(y, y, n);
+	l1 = l;
+	do
+	{
+		l = l1;
+		mat_v(A, y, x, n);
+		norm(&xn, x, n);
+
+		for (i = 0; i < n; i++)
+			y[i] = x[i] / xn;
+
+		mat_v(A, y, t, n);
+		l1 = tdely(t, y, n);
+			//dotpr(y, t, n) / dotpr(y, y, n);
+	} while (!(fabs(l1 - l) < e));
+
+	cout << "Собственное значение: " << l1 << endl;
+	fout << "Собственное значение: " << l1 << endl;
+
+	norm(&xn, x, n);
+	for (i = 0; i < n; i++)
+		y[i] = x[i] / xn;
+
+	cout << "Собственный вектор:" << endl;
+	for (i = 0; i < n; i++)
+	{
+		cout << "y" << i + 1 << " = " << y[i] << endl;
+	}
+	cout << endl;
+	fout << "Собственный вектор:" << endl;
+	for (i = 0; i < n; i++)
+	{
+		fout << "y" << i + 1 << " = " << y[i] << endl;
+	}
+
+	for (int i = 0; i < n; i++)
+		delete[] A[i];
+	delete[] A;
+	delete[] y;
+	delete[] x;
+	delete[] t;
+	return 0;
+}
