@@ -1,0 +1,129 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double f(double x)
+{
+	return 2 * pow(x, 2) - 2 * x + 2.5;
+}
+
+int Swann(double x0, double t, double& a, double& b)
+{
+	int k = 0;
+	double d, x;
+	double f1 = f(x0 - t), f2 = f(x0), f3 = f(x0 + t);
+	if (f1 >= f2 && f2 <= f3)
+	{
+		a = x0 - t;
+		b = x0 + t;
+		cout << " f(x0 - t) >= f(x0) <= f(x0 + t)" << endl;
+		return 1;
+	}
+	if (f1 < f2 > f3)
+	{
+		cout << " f(x0 - t) < f(x0) > f(x0 + t)" << endl;
+		return 0;
+	}
+	if (f1 >= f2 && f2 > f3)
+	{
+		d = t;
+		a = x0;
+		cout << "	a = " << a << endl;
+	}
+	else
+	{
+		d = -t;
+		b = x0;
+		cout << "	b = " << b << endl;
+	}
+	x0 += d;
+	k++;
+	x = x0 + 2 * d;
+	f1 = f(x0);
+	f2 = f(x);
+	while (f2 < f1)
+	{
+		k++;
+		if (d == t)
+		{
+			a = x0;
+			cout << " k = "<<k<<":	a = " << a << endl;
+		}
+		else
+		{
+			b = x0;
+			cout << " k = " << k << ":	b = " << b << endl;
+		}
+		x0 = x;
+		f1 = f2;
+		x += pow(2, k) * d;
+		f2 = f(x);
+	}
+	if (d == t)
+		b = x;
+	else
+		a = x;
+	return 1;
+}
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	double x0, t, a, b;
+	cout << " x0 = ";
+	cin >> x0;
+	cout << " Шаг t = ";
+	cin >> t;
+	cout << endl;
+
+	if (Swann(x0, t, a, b))
+	{
+		cout << " [a;b] = [" << a << ";" << b << "]" << endl;
+		int p = 0;
+		double e, l, del, L;
+		double gold_point = (3 - sqrt(5)) / 2;
+		cout << endl << " gold_point = " << gold_point << endl;
+		cout << " e = ";
+		cin >> e;
+		cout << endl;
+		l = 2 * e;
+		float y = a + gold_point * (b - a);
+		float z = a + b - y;
+		float fy = f(y);
+		float fz = f(z);
+		L = fabs(a - b);
+		while (L > l)
+		{
+			p++;
+			if (fy <= fz)
+			{
+				b = z;
+				z = y;
+				fz = fy;
+				y = a + b - y;
+				fy = f(y);
+			}
+			else
+			{
+				a = y;
+				y = z;
+				fy = fz;
+				z = a + b - z;
+				fz = f(z);
+			}
+			L = fabs(a - b);
+			cout << p << " [" << a << "; " << b << "]" << endl;
+			cout << " L = " << L << endl;
+		}
+
+		del = fabs(a - b) / 2;
+
+		cout << endl << "x = " << (a + b) / 2 << endl;
+		cout << "Решение найдено за " << p << " итераций" << endl;
+		cout << " d = " << del << endl;
+	}
+	else
+		cout << " f - не унимодальная" << endl;
+
+	return 0;
+}
